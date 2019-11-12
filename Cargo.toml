@@ -1,0 +1,27 @@
+[package]
+name = "yacs-rs"
+version = "0.1.0"
+authors = ["Antonia Calia-Bogan <alfriadox@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33"
+redis = "0.13.0"
+reqwest = "0.9.22"
+actix-web = "1.0.8"
+scraper = "0.11.0"
+xml-rs = "0.8.0"
+
+[[bin]]
+name = "yacs-dev"
+test = false
+doc = false
+doctest = false
+
+[[bin]]
+name = "yacs-prod"
+test = false
+doc = false
+doctest = false
